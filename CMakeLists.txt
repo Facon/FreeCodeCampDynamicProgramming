@@ -13,10 +13,9 @@ else()
 	add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
-find_package(fmt)
 find_package(doctest)
 
-link_libraries(fmt::fmt doctest::doctest)
+link_libraries(doctest::doctest)
 
 enable_testing()
 
