@@ -6,6 +6,7 @@ add_executable(CanSumWithMemoizationTest)
 add_executable(HowSumWithMemoizationTest)
 add_executable(BestSumWithMemoizationTest)
 add_executable(CanConstructWithMemoizationTest)
+add_executable(CountConstructWithMemoizationTest)
 
 target_sources(FibonacciWithMemoizationTest
 PRIVATE
@@ -31,9 +32,14 @@ target_sources(CanConstructWithMemoizationTest
 PRIVATE
 	canConstructWithMemoization.cpp)
 
+target_sources(CountConstructWithMemoizationTest
+PRIVATE
+	countConstructWithMemoization.cpp)
+
 add_test(NAME fibonacciWithMemoizationTest COMMAND FibonacciWithMemoizationTest)
 add_test(NAME GridTravelerWithMemoizationTest COMMAND GridTravelerWithMemoizationTest)
 add_test(NAME CanSumWithMemoizationTest COMMAND CanSumWithMemoizationTest)
 add_test(NAME HowSumWithMemoizationTest COMMAND HowSumWithMemoizationTest)
 add_test(NAME BestSumWithMemoizationTest COMMAND BestSumWithMemoizationTest)
 add_test(NAME CanConstructWithMemoizationTest COMMAND CanConstructWithMemoizationTest)
+add_test(NAME CountConstructWithMemoizationTest COMMAND CountConstructWithMemoizationTest)
