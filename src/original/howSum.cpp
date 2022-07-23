@@ -50,7 +50,7 @@ std::ostream& operator<<(std::ostream& stream, const std::vector<T>& in) {
 }
 }
 
-TEST_CASE("How sum with memoization")
+TEST_CASE("How sum")
 {
     SUBCASE("0, []")
 	{ REQUIRE(howSum(0, {}) == std::vector<int32_t>{}); }

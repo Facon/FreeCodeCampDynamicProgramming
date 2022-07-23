@@ -6,7 +6,7 @@
 
 /*
 Time complexity: O(n*m^2)
-Space complexity: O()
+Space complexity: O(m^2)
 */
 std::vector<int32_t> howSumWithMemoization(int32_t target, const std::unordered_set<int32_t>& values, std::unordered_map<int32_t, std::vector<int32_t>>& memoization)
 {

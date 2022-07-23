@@ -23,8 +23,15 @@ add_executable(HowSumWithMemoizationTest)
 target_sources(HowSumWithMemoizationTest
 PRIVATE
 	howSumWithMemoization.cpp)
+	
+add_executable(BestSumWithMemoizationTest)
+
+target_sources(BestSumWithMemoizationTest
+PRIVATE
+	bestSumWithMemoization.cpp)
 
 add_test(NAME fibonacciWithMemoizationTest COMMAND FibonacciWithMemoizationTest)
 add_test(NAME GridTravelerWithMemoizationTest COMMAND GridTravelerWithMemoizationTest)
 add_test(NAME CanSumWithMemoizationTest COMMAND CanSumWithMemoizationTest)
 add_test(NAME HowSumWithMemoizationTest COMMAND HowSumWithMemoizationTest)
+add_test(NAME BestSumWithMemoizationTest COMMAND BestSumWithMemoizationTest)
