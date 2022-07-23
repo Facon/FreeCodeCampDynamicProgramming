@@ -36,6 +36,6 @@ TEST_CASE("Fibonacci")
 	SUBCASE("20")
 	{ REQUIRE(fibonacci(20) == 6765); }
 	
-	SUBCASE("50")
-	{ REQUIRE(fibonacci(40) == 102334155); }
+	SUBCASE("30")
+	{ REQUIRE(fibonacci(30) == 832040); }
 }

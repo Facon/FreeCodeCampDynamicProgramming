@@ -1,37 +1,39 @@
 cmake_minimum_required(VERSION 3.13)
 
 add_executable(FibonacciWithMemoizationTest)
+add_executable(GridTravelerWithMemoizationTest)
+add_executable(CanSumWithMemoizationTest)
+add_executable(HowSumWithMemoizationTest)
+add_executable(BestSumWithMemoizationTest)
+add_executable(CanConstructWithMemoizationTest)
 
 target_sources(FibonacciWithMemoizationTest
 PRIVATE
 	fibonacciWithMemoization.cpp)
 
-add_executable(GridTravelerWithMemoizationTest)
-
 target_sources(GridTravelerWithMemoizationTest
 PRIVATE
 	gridTravelerWithMemoization.cpp)
-	
-add_executable(CanSumWithMemoizationTest)
 
 target_sources(CanSumWithMemoizationTest
 PRIVATE
 	canSumWithMemoization.cpp)
-	
-add_executable(HowSumWithMemoizationTest)
 
 target_sources(HowSumWithMemoizationTest
 PRIVATE
 	howSumWithMemoization.cpp)
-	
-add_executable(BestSumWithMemoizationTest)
 
 target_sources(BestSumWithMemoizationTest
 PRIVATE
 	bestSumWithMemoization.cpp)
+	
+target_sources(CanConstructWithMemoizationTest
+PRIVATE
+	canConstructWithMemoization.cpp)
 
 add_test(NAME fibonacciWithMemoizationTest COMMAND FibonacciWithMemoizationTest)
 add_test(NAME GridTravelerWithMemoizationTest COMMAND GridTravelerWithMemoizationTest)
 add_test(NAME CanSumWithMemoizationTest COMMAND CanSumWithMemoizationTest)
 add_test(NAME HowSumWithMemoizationTest COMMAND HowSumWithMemoizationTest)
 add_test(NAME BestSumWithMemoizationTest COMMAND BestSumWithMemoizationTest)
+add_test(NAME CanConstructWithMemoizationTest COMMAND CanConstructWithMemoizationTest)
