@@ -7,6 +7,7 @@ add_executable(HowSumTest)
 add_executable(BestSumTest)
 add_executable(CanConstructTest)
 add_executable(CountConstructTest)
+add_executable(AllConstructTest)
 
 target_sources(FibonacciTest
 PRIVATE
@@ -36,6 +37,10 @@ target_sources(CountConstructTest
 PRIVATE
 	countConstruct.cpp)
 
+target_sources(AllConstructTest
+PRIVATE
+	allConstruct.cpp)
+
 add_test(NAME FibonacciTest COMMAND FibonacciTest)
 add_test(NAME GridTravelerTest COMMAND GridTravelerTest)
 add_test(NAME CanSumTest COMMAND CanSumTest)
@@ -43,3 +48,4 @@ add_test(NAME HowSumTest COMMAND HowSumTest)
 add_test(NAME BestSumTest COMMAND BestSumTest)
 add_test(NAME CanConstructTest COMMAND CanConstructTest)
 add_test(NAME CountConstructTest COMMAND CountConstructTest)
+add_test(NAME AllConstructTest COMMAND AllConstructTest)
