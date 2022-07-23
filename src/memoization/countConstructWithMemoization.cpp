@@ -4,7 +4,7 @@
 #include <unordered_map>
 
 /*
-Time complexity: O(n*m2)
+Time complexity: O(n*m^2)
 Space complexity: O(m^2)
 */
 uint32_t countConstructWithMemoization(std::string_view target, const std::vector<std::string_view>& values, std::unordered_map<std::string_view, uint32_t>& memoization)

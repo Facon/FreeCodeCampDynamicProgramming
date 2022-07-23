@@ -5,7 +5,7 @@
 
 /*
 Time complexity: O(n*m)
-Space complexity: O(n+m)
+Space complexity: O(n*m)
 */
 uint64_t gridTravelerWithMemoization(uint64_t x, uint64_t y, std::unordered_map<std::string, uint64_t>& memoization)
 {

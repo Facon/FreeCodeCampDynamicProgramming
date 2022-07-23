@@ -53,6 +53,6 @@ TEST_CASE("Fibonacci with memoization")
 	SUBCASE("20")
 	{ REQUIRE(fibonacciWithMemoization(20) == 6765); }
 	
-	SUBCASE("50")
+	SUBCASE("40")
 	{ REQUIRE(fibonacciWithMemoization(40) == 102334155); }
 }
