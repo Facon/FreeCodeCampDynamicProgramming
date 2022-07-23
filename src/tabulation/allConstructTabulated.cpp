@@ -22,23 +22,25 @@ std::vector<std::vector<std::string_view>> allConstructTabulated(std::string_vie
 		
 		for (auto& value: values)
 		{
-			auto offsetIterator = std::next(target.cbegin(), i);
-			auto positions = std::mismatch(offsetIterator, target.cend(), value.cbegin(), value.cend());
+			const auto offsetIterator = std::next(target.cbegin(), i);
+			const auto positions = std::mismatch(offsetIterator, target.cend(), value.cbegin(), value.cend());
 		
 			if (std::get<0>(positions) == offsetIterator || std::get<1>(positions) != value.cend())
 			{
 				continue;
 			}
 			
-			auto lookAheadIndex = i + value.size();
+			const auto lookAheadIndex = i + value.size();
+			auto& lookAheadSubTable = table.at(lookAheadIndex);
+			const auto& currentSubTable = table.at(i);
 			
-			auto indexEndOfPosition = table.at(lookAheadIndex).size();
+			const auto indexEndOfPosition = lookAheadSubTable.size();
 			
-			table.at(lookAheadIndex).insert(table.at(lookAheadIndex).end(), table.at(i).cbegin(), table.at(i).cend());
+			lookAheadSubTable.insert(lookAheadSubTable.end(), currentSubTable.cbegin(), currentSubTable.cend());
 			
-			for (auto index = indexEndOfPosition; index < table.at(lookAheadIndex).size(); ++index)
+			for (auto index = indexEndOfPosition; index < lookAheadSubTable.size(); ++index)
 			{
-				table.at(lookAheadIndex).at(index).push_back(value);
+				lookAheadSubTable.at(index).emplace_back(value);
 			}
 		}
 	}
