@@ -1,0 +1,51 @@
+cmake_minimum_required(VERSION 3.13)
+
+add_executable(FibonacciTabulatedTest)
+add_executable(GridTravelerTabulatedTest)
+add_executable(CanSumTabulatedTest)
+add_executable(HowSumTabulatedTest)
+add_executable(BestSumTabulatedTest)
+add_executable(CanConstructTabulatedTest)
+add_executable(CountConstructTabulatedTest)
+add_executable(AllConstructTabulatedTest)
+
+target_sources(FibonacciTabulatedTest
+PRIVATE
+	fibonacciTabulated.cpp)
+
+target_sources(GridTravelerTabulatedTest
+PRIVATE
+	gridTravelerTabulated.cpp)
+	
+target_sources(CanSumTabulatedTest
+PRIVATE
+	canSumTabulated.cpp)
+	
+target_sources(HowSumTabulatedTest
+PRIVATE
+	howSumTabulated.cpp)
+
+target_sources(BestSumTabulatedTest
+PRIVATE
+	bestSumTabulated.cpp)
+
+target_sources(CanConstructTabulatedTest
+PRIVATE
+	canConstructTabulated.cpp)
+	
+target_sources(CountConstructTabulatedTest
+PRIVATE
+	countConstructTabulated.cpp)
+
+target_sources(AllConstructTabulatedTest
+PRIVATE
+	allConstructTabulated.cpp)
+
+add_test(NAME FibonacciTabulatedTest COMMAND FibonacciTabulatedTest)
+add_test(NAME GridTravelerTabulatedTest COMMAND GridTravelerTabulatedTest)
+add_test(NAME CanSumTabulatedTest COMMAND CanSumTabulatedTest)
+add_test(NAME HowSumTabulatedTest COMMAND HowSumTabulatedTest)
+add_test(NAME BestSumTabulatedTest COMMAND BestSumTabulatedTest)
+add_test(NAME CanConstructTabulatedTest COMMAND CanConstructTabulatedTest)
+add_test(NAME CountConstructTabulatedTest COMMAND CountConstructTabulatedTest)
+add_test(NAME AllConstructTabulatedTest COMMAND AllConstructTabulatedTest)

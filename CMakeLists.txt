@@ -21,6 +21,6 @@ enable_testing()
 
 add_subdirectory(src/original)
 add_subdirectory(src/memoization)
-#add_subdirectory(src/tabulation)
+add_subdirectory(src/tabulation)
 
 
