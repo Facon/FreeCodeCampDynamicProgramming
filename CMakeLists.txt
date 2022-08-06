@@ -19,7 +19,7 @@ link_libraries(doctest::doctest)
 
 enable_testing()
 
-add_subdirectory(src/original)
+add_subdirectory(src/BruteForce)
 add_subdirectory(src/memoization)
 add_subdirectory(src/tabulation)
 
