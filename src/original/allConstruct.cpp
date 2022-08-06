@@ -6,7 +6,7 @@
 
 /*
 Time complexity: O(n^m)
-Space complexity: O(m)
+Space complexity: O(n^m)
 */
 std::vector<std::deque<std::string_view>> allConstruct(std::string_view target, const std::vector<std::string_view>& values)
 {
