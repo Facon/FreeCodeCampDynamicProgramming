@@ -56,8 +56,7 @@ In any case, it is the small price that we pay for better performance.
 * CanSum: "Can you do it? yes/no"
 * HowSum: "How will you do it?"
 * BestSum: "What is the optimize way to do it?"
-
-
+----
 * CanSum: Decision problem
 * HowSum: Combinatoric problem
 * BestSum: Optimization problem
@@ -66,8 +65,7 @@ In any case, it is the small price that we pay for better performance.
 * CanConstruct: "Can you do it? yes/no"
 * CountConstruct: "In how many ways will you do it?"
 * AllConstruct: "What are all the possible ways to do it?"
-
-
+----
 * CanSum: Decision problem
 * HowSum: Combinatoric enumeration problem
 * AllConstruct: Combinatoric construction problem
