@@ -1,5 +1,5 @@
-# CodeCampDynamicProgramming
-Dynamic programming exercises written in C++17 from CodeCamp in YouTube: https://youtu.be/oBt53YbR9Kk.
+# FreeCodeCampDynamicProgramming
+Dynamic programming exercises written in C++17 from FreeCodeCamp in YouTube: https://youtu.be/oBt53YbR9Kk.
 
 This repository serves as a very good starting point to learn or remember about dynamic programming.
 
